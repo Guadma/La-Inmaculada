@@ -136,6 +136,7 @@
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            aspect-ratio: 1/1;
             border: 2px solid var(--color-accent);
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
@@ -173,6 +174,23 @@
 
         .nav-links a:hover {
             color: var(--color-accent);
+        }
+
+        .nav-links a.btn {
+            color: var(--color-accent);
+        }
+        
+        .navbar:not(.scrolled) .nav-links a.btn {
+            color: var(--color-text-main);
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            text-shadow: none;
+        }
+
+        .navbar:not(.scrolled) .nav-links a.btn:hover {
+            color: white;
+            background-color: transparent;
+            border-color: white;
         }
 
         .mobile-menu-btn {
@@ -959,7 +977,7 @@
             <div class="footer-grid">
                 <div>
                     <div class="logo-container" style="margin-bottom: 20px;">
-                        <div class="logo-placeholder" style="width: 40px; height: 40px; font-size: 18px;">M</div>
+                        <img src="logo.jpg" alt="Logo Inmaculada" class="logo-img" style="width: 40px; height: 40px; border-width: 1px;">
                         <span class="logo-text" style="color: white; font-size: 1.2rem;">Colegio La Inmaculada</span>
                     </div>
                     <p style="color: #ccc; font-style: italic; font-size: 0.9rem;">"Formando Almas, Iluminando Mentes"</p>
