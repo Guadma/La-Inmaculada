@@ -311,6 +311,9 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .level-img {
@@ -326,6 +329,13 @@
         .level-content {
             padding: 30px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .level-content .btn {
+            margin-top: auto;
         }
 
         /* 5. Fe y Valores */
