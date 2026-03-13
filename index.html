@@ -118,6 +118,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 40px;
         }
 
         .logo-container {
@@ -127,18 +131,13 @@
             gap: 15px;
         }
 
-        .logo-placeholder {
+        .logo-img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            object-fit: cover;
             border: 2px solid var(--color-accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-family: var(--font-display);
-            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
 
         .logo-text {
@@ -605,6 +604,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .navbar-container {
+                padding: 0 20px;
+            }
+
             .nav-links {
                 display: none;
                 position: absolute;
@@ -652,16 +655,16 @@
 
     <!-- 1. Barra de Navegación -->
     <nav class="navbar" id="navbar">
-        <div class="container navbar-container">
+        <div class="navbar-container">
             <a href="#" class="logo-container">
-                <div class="logo-placeholder" title="Logo Inmaculada">M</div>
+                <img src="logo.jpg" alt="Logo Inmaculada" class="logo-img">
                 <span class="logo-text">Colegio La Inmaculada</span>
             </a>
             <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
             <div class="nav-links" id="nav-links">
                 <a href="#inicio">Inicio</a>
                 <a href="#quienes-somos">Nuestra Escuela</a>
-                <a href="#niveles">Niveles Educativos</a>
+                <a href="#niveles">Oferta Educativa</a>
                 <a href="#fe-valores">Fe y Valores</a>
                 <a href="#instalaciones">Instalaciones</a>
                 <a href="#noticias">Noticias</a>
@@ -751,35 +754,35 @@
         </div>
     </section>
 
-    <!-- 4. Niveles Educativos -->
+    <!-- 4. Oferta Educativa -->
     <section class="section-padding bg-blanco" id="niveles">
         <div class="container">
-            <h2 class="text-center fade-in" style="font-size: 2.5rem; margin-bottom: 20px;">Nuestros Niveles Educativos</h2>
+            <h2 class="text-center fade-in" style="font-size: 2.5rem; margin-bottom: 20px;">Nuestra Oferta Educativa</h2>
             <div class="levels-grid">
                 <div class="level-card fade-in">
-                    <div class="level-img">Imagen Nivel Inicial Placeholder</div>
+                    <div class="level-img">Imagen Ciclo Básico Placeholder</div>
                     <div class="level-content">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Nivel Inicial</h3>
-                        <p style="color: #666; margin-bottom: 20px;">(3 a 5 años)</p>
-                        <p style="margin-bottom: 25px;">"Sembramos la primera semilla de fe y aprendizaje"</p>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Ciclo Básico</h3>
+                        <p style="color: #666; margin-bottom: 20px;">(Educación Secundaria)</p>
+                        <p style="margin-bottom: 25px;">"Educación integral y formación en valores en los primeros años del secundario"</p>
                         <a href="#" class="btn btn-secondary">Ver más</a>
                     </div>
                 </div>
                 <div class="level-card fade-in" style="transition-delay: 0.1s;">
-                    <div class="level-img" style="background: linear-gradient(135deg, #8BAFBC, #E0EBF5);">Imagen Nivel Primario Placeholder</div>
+                    <div class="level-img" style="background: linear-gradient(135deg, #8BAFBC, #E0EBF5);">Imagen Cs Sociales Placeholder</div>
                     <div class="level-content">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Nivel Primario</h3>
-                        <p style="color: #666; margin-bottom: 20px;">(1° a 6° grado)</p>
-                        <p style="margin-bottom: 25px;">"Construimos bases sólidas en conocimiento y virtud"</p>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Bachiller en Ciencias Sociales</h3>
+                        <p style="color: #666; margin-bottom: 20px;">(Ciclo Orientado)</p>
+                        <p style="margin-bottom: 25px;">"Formamos jóvenes íntegros con un fuerte compromiso social e histórico"</p>
                         <a href="#" class="btn btn-secondary">Ver más</a>
                     </div>
                 </div>
                 <div class="level-card fade-in" style="transition-delay: 0.2s;">
-                    <div class="level-img" style="background: linear-gradient(135deg, #1A2B4A, #A8C4D4);">Imagen Nivel Secundario Placeholder</div>
+                    <div class="level-img" style="background: linear-gradient(135deg, #1A2B4A, #A8C4D4);">Imagen Economía Placeholder</div>
                     <div class="level-content">
-                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Nivel Secundario</h3>
-                        <p style="color: #666; margin-bottom: 20px;">(1° a 6° año)</p>
-                        <p style="margin-bottom: 25px;">"Formamos jóvenes íntegros para el mundo"</p>
+                        <h3 style="font-size: 1.8rem; margin-bottom: 15px;">Bachiller en Economía y Administración</h3>
+                        <p style="color: #666; margin-bottom: 20px;">(Ciclo Orientado)</p>
+                        <p style="margin-bottom: 25px;">"Preparando líderes para el mundo actual con responsabilidad ética"</p>
                         <a href="#" class="btn btn-secondary">Ver más</a>
                     </div>
                 </div>
@@ -873,20 +876,20 @@
         <div class="container">
             <div class="stats-grid" id="stats-section">
                 <div class="stat-item fade-in">
-                    <div class="stat-number" data-target="45">0</div>
+                    <div class="stat-number" data-target="34">0</div>
                     <div style="font-weight: 600;">Años de Historia</div>
                 </div>
                 <div class="stat-item fade-in" style="transition-delay: 0.1s;">
-                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-number" data-target="305">0</div>
                     <div style="font-weight: 600;">Alumnos</div>
                 </div>
                 <div class="stat-item fade-in" style="transition-delay: 0.2s;">
-                    <div class="stat-number" data-target="98" data-suffix="%">0</div>
-                    <div style="font-weight: 600;">Egresados Universitarios</div>
+                    <div class="stat-number" data-target="12">0</div>
+                    <div style="font-weight: 600;">Secciones</div>
                 </div>
                 <div class="stat-item fade-in" style="transition-delay: 0.3s;">
-                    <div class="stat-number" data-target="120">0</div>
-                    <div style="font-weight: 600;">Docentes Comprometidos</div>
+                    <div class="stat-number" data-target="51">0</div>
+                    <div style="font-weight: 600;">Agentes</div>
                 </div>
             </div>
         </div>
@@ -971,19 +974,19 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Niveles</h4>
+                    <h4>Oferta Educativa</h4>
                     <ul>
-                        <li><a href="#niveles">Nivel Inicial</a></li>
-                        <li><a href="#niveles">Nivel Primario</a></li>
-                        <li><a href="#niveles">Nivel Secundario</a></li>
+                        <li><a href="#niveles">Ciclo Básico</a></li>
+                        <li><a href="#niveles">Bachiller Cs. Sociales</a></li>
+                        <li><a href="#niveles">Bachiller Economía</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4>Contacto</h4>
                     <ul style="color: #ccc; font-size: 0.95rem;">
-                        <li style="margin-bottom: 10px;">📍 San Martín 450, Ciudad</li>
-                        <li style="margin-bottom: 10px;">📞 (XXX) XXX-XXXX</li>
-                        <li style="margin-bottom: 10px;">✉️ info@lainmaculada.edu.ar</li>
+                        <li style="margin-bottom: 10px;">📍 Saavedra 1964, Santo Tomé</li>
+                        <li style="margin-bottom: 10px;">📞 0342 - 4740425</li>
+                        <li style="margin-bottom: 10px;">✉️ sec3071_santotome@santafe.edu.ar</li>
                     </ul>
                     <div style="display: flex; gap: 15px; margin-top: 15px;">
                         <a href="#">FB</a> <a href="#">IG</a> <a href="#">YT</a>
