@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto e Inscripciones - Colegio La Inmaculada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="logo-container">
+                <img src="logo.jpg" alt="Logo Inmaculada" class="logo-img">
+                <span class="logo-text">Colegio La Inmaculada</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="nuestra-escuela.html">Nuestra Escuela</a>
+                <a href="oferta-educativa.html">Oferta Educativa</a>
+                <a href="fe-y-valores.html">Fe y Valores</a>
+                <a href="instalaciones.html">Instalaciones</a>
+                <a href="noticias.html">Noticias</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="contacto.html" class="btn btn-primary" style="padding: 8px 20px;">Inscripciones 2025</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-padding bg-crema" style="margin-top: 80px;">
+        <div class="container">
+            <h1 class="text-center fade-in" style="font-size: 3rem; margin-bottom: 20px;">Formulario de Inscripción 2025</h1>
+            <p class="text-center" style="margin-bottom: 40px; color: #666;">Por favor, complete los datos para iniciar el proceso de ingreso.</p>
+            
+            <div class="faith-section fade-in" style="align-items: flex-start;">
+                <div class="faith-content" style="background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="tutor">Nombre del Tutor</label>
+                            <input type="text" id="tutor" name="tutor" class="form-control" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alumno">Nombre del Alumno</label>
+                            <input type="text" id="alumno" name="alumno" class="form-control" placeholder="Ej: Sofía Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nivel">Nivel al que ingresa</label>
+                            <select id="nivel" name="nivel" class="form-control" required>
+                                <option value="" disabled selected>Seleccione un nivel</option>
+                                <option value="ciclo-basico">Ciclo Básico (1°, 2°, 3° año)</option>
+                                <option value="sociales">Bachiller en Cs. Sociales (4°, 5° año)</option>
+                                <option value="economia">Bachiller en Economía (4°, 5° año)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono de Contacto</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Ej: 0342-1234567" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje / Consulta adicional</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Alguna observación que desee compartir..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 4px;">Enviar Solicitud</button>
+                    </form>
+                </div>
+                
+                <div class="faith-content" style="padding-left: 20px;">
+                    <h2 style="font-size: 2rem; margin-bottom: 20px;">Información de Contacto</h2>
+                    <ul style="list-style: none; font-size: 1.1rem;">
+                        <li style="margin-bottom: 20px;">
+                            <strong>📍 Dirección:</strong><br>
+                            Saavedra 1964, Santo Tomé, Santa Fe.
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <strong>📞 Teléfono:</strong><br>
+                            0342 - 4740425
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <strong>✉️ Email:</strong><br>
+                            sec3071_santotome@santafe.edu.ar
+                        </li>
+                    </ul>
+                    <div style="margin-top: 30px;">
+                        <img src="https://picsum.photos/600/400?random=40" alt="Ubicación" style="width: 100%; border-radius: 8px; border: 1px solid #ddd;">
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">Horario de atención: Lunes a Viernes de 8:00 a 12:00 y 13:30 a 17:30.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo-container" style="margin-bottom: 20px;">
+                        <img src="logo.jpg" alt="Logo Inmaculada" class="logo-img" style="width: 40px; height: 40px; border-width: 1px;">
+                        <span class="logo-text" style="color: white; font-size: 1.2rem;">Colegio La Inmaculada</span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Colegio La Inmaculada — Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
