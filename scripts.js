@@ -21,12 +21,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const scrollTopBtn = document.getElementById('scrollTopBtn');
     
+    // On subpages (not index.html), always keep navbar solid
+    const isHomePage = window.location.pathname === '/' ||
+                       window.location.pathname.endsWith('index.html') ||
+                       window.location.pathname === '';
+    
+    if (!isHomePage && navbar) {
+        // Force solid navbar on subpages regardless of scroll
+        navbar.classList.add('scrolled');
+    }
+    
     window.addEventListener('scroll', () => {
         if (navbar) {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
+            if (isHomePage) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
             } else {
-                navbar.classList.remove('scrolled');
+                // On subpages, always keep scrolled (solid) class
+                navbar.classList.add('scrolled');
             }
         }
 
