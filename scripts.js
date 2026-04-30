@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     // 3. Intersection Observer (Fade-in Animations)
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = {
